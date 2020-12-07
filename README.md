@@ -28,3 +28,5 @@
 - Активировать ВО - **`env\Scripts\activation`**
 - Установка Selenium - **`pip install selenium`**
 - Установка pytest - **`pip install pytest`**
+
+[back to top](#table-of-contents)
