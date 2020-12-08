@@ -15,6 +15,7 @@
 | **Release** | **description** |
 |----------------|:---------|
 | [1.0.0](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.0) | Реализован тестовый сценарий для создания групп |
+| [1.0.1](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.1) | Выделены вспомогательные методы и группы |
 
 [back to top](#table-of-contents)
 
