@@ -17,6 +17,7 @@
 | [1.0.0](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.0) | Реализован тестовый сценарий для создания групп |
 | [1.0.1](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.1) | Выделены вспомогательные методы и группы |
 | [1.0.2](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.2) | Реализован тестовый сценарий для создания контактов |
+| [1.0.3](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.3) | Переведены тесты с unittest на py.test и реализованы фикстуры |
 
 [back to top](#table-of-contents)
 
