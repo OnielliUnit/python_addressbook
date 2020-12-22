@@ -1,4 +1,4 @@
-class sessionGroupHelper:
+class sessionContactHelper:
 
     def __init__(self, app):
         self.app = app
@@ -14,8 +14,6 @@ class sessionGroupHelper:
         wd.find_element_by_id("LoginForm").submit()
         wd.find_element_by_xpath("//html").click()
 
-    def logout(self):
+    def logout(self) -> object:
         wd = self.app.wd
         wd.find_element_by_link_text("Logout").click()
-        wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys("admin")

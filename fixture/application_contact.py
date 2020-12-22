@@ -1,6 +1,6 @@
 from selenium import webdriver
-from fixture.session_group import sessionGroupHelper
-from fixture.group import groupHelper
+from fixture.session_contact import sessionContactHelper
+from fixture.contact import contactHelper
 
 
 class Application:
@@ -8,8 +8,8 @@ class Application:
     def __init__(self):
         self.wd = webdriver.Firefox()
         self.wd.implicitly_wait(30)
-        self.session_group = sessionGroupHelper(self)
-        self.group = groupHelper(self)
+        self.session_contact = sessionContactHelper(self)
+        self.contact = contactHelper(self)
 
     def open_home_page(self):
         wd = self.wd
