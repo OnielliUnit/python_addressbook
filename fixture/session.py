@@ -1,4 +1,4 @@
-class sessionContactHelper:
+class sessionHelper:
 
     def __init__(self, app):
         self.app = app
