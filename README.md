@@ -14,11 +14,14 @@
 ## Release
 | **Release** | **description** |
 |----------------|:---------|
-| [1.0.0](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.0) | Реализован тестовый сценарий для создания групп |
-| [1.0.1](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.1) | Выделены вспомогательные методы и группы |
-| [1.0.2](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.2) | Реализован тестовый сценарий для создания контактов |
-| [1.0.3](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.3) | Переведены тесты с unittest на py.test и реализованы фикстуры |
-| [1.0.4](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.4) | Реализована двухуровневая архитектура |
+| [Задание №1](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.0) | Подготовлена инфраструктура и создан первый работающий тест |
+| [Задание №2](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.1) | Созданы вспомогательные методы и классы |
+| [Задание №3](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.2) | Реализован тестовый сценарий для создания контактов |
+| [Задание №4](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.3) | Переведены тесты с unittest на py.test и реализованы фикстуры |
+| [Задание №5](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.4) | Реализована двухуровневая архитектура |
+| [Задание №6](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.5) | Реализована общая фикстура для всех тестов |
+| [Задание №7](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.6) | Реализованы все тесты создания, удаления, модификации для групп и контактов |
+| [Задание №8](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.7) | Реализована проверка валидности фикстуры и проверка состояния сессии |
 
 [back to top](#table-of-contents)
 
