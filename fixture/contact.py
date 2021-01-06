@@ -9,15 +9,14 @@ class contactHelper:
 
     def change_field_value(self, field_name, field_value):
         wd = self.app.wd
-        wd.find_element_by_name(field_name).click()
-        wd.find_element_by_name(field_name).clear()
-        wd.find_element_by_name(field_name).send_keys(field_value)
+        if field_value is not None:
+            wd.find_element_by_name(field_name).click()
+            wd.find_element_by_name(field_name).clear()
+            wd.find_element_by_name(field_name).send_keys(field_value)
 
     def fill_contact_form(self, contact):
+        wd = self.app.wd
         self.change_field_value("firstname", contact.firstName)
-        self.change_field_value("middlename", contact.middleName)
-        self.change_field_value("lastname", contact.lastName)
-        self.change_field_value("nickname", contact.nickName)
 
     def create(self, contact):
         wd = self.app.wd
@@ -38,8 +37,9 @@ class contactHelper:
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to_alert().accept()
 
-    def edit_contact(self, contact):
+    def modify_first_contact(self, contact):
         wd = self.app.wd
+        self.app.open_home_page()
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         # change contact data
         self.fill_contact_form(contact)
