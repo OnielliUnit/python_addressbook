@@ -1,7 +1,7 @@
 from model.group import Group
 
 
-def test_edit_group(app):
+def test_modify_group_name(app):
     app.session.login(username="admin", password="secret")
-    app.group.edit_group(Group(name="Lesson8", header="Lesson8", footer="Lesson8"))
+    app.group.modify_first_group(Group(name="New group"))
     app.session.logout()

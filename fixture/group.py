@@ -9,11 +9,13 @@ class groupHelper:
 
     def change_field_value(self, field_name, field_value):
         wd = self.app.wd
-        wd.find_element_by_name(field_name).click()
-        wd.find_element_by_name(field_name).clear()
-        wd.find_element_by_name(field_name).send_keys(field_value)
+        if field_value is not None:
+            wd.find_element_by_name(field_name).click()
+            wd.find_element_by_name(field_name).clear()
+            wd.find_element_by_name(field_name).send_keys(field_value)
 
     def fill_group_form(self, group):
+        wd = self.app.wd
         self.change_field_value("group_name", group.name)
         self.change_field_value("group_header", group.header)
         self.change_field_value("group_footer", group.footer)
@@ -42,7 +44,7 @@ class groupHelper:
         wd.find_element_by_name("delete").click()
         self.return_to_groups_page()
 
-    def edit_group(self, group):
+    def modify_first_group(self, group):
         wd = self.app.wd
         self.open_groups_page()
         # select first group
