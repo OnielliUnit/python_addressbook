@@ -8,7 +8,7 @@ class Application:
 
     def __init__(self):
         self.wd = webdriver.Firefox(executable_path=r'C:\\Users\proun\Desktop\Python\geckodriver.exe')
-        self.wd.implicitly_wait(30)
+        self.wd.implicitly_wait(5)
         self.session = sessionHelper(self)
         self.contact = contactHelper(self)
         self.group = groupHelper(self)
