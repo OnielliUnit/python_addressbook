@@ -5,7 +5,8 @@ class contactHelper:
 
     def open_contacts_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("add new").click()
+        if not (wd.current_url.endswith("/.php")):
+            wd.find_element_by_link_text("add new").click()
 
     def change_field_value(self, field_name, field_value):
         wd = self.app.wd
