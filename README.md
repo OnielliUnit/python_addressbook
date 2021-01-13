@@ -23,6 +23,7 @@
 | [Задание №7](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.6) | Реализованы все тесты создания, удаления, модификации для групп и контактов |
 | [Задание №8](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.7) | Реализована проверка валидности фикстуры и проверка состояния сессии |
 | [Задание №9](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.8) | Реализовано выполнение предусловий в тестах для удаления и модификации для групп и контактов |
+| [Задание №10](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.9) | Оптимизированы переходы между страницами |
 
 [back to top](#table-of-contents)
 
