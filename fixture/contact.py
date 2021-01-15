@@ -7,7 +7,7 @@ class contactHelper:
         wd = self.app.wd
         if not (wd.current_url.endswith("./") and len(
                 wd.find_elements_by_xpath("//input[@value='Send e-Mail']")) > 0):
-            wd.find_element_by_link_text("add new").click()
+            wd.find_element_by_link_text("home").click()
 
     def change_field_value(self, field_name, field_value):
         wd = self.app.wd
@@ -23,38 +23,33 @@ class contactHelper:
     def create(self, contact):
         wd = self.app.wd
         self.open_contacts_page()
-        # init contact creation
-        wd.find_element_by_name("theform").click()
-        # fill contact form
+        wd.find_element_by_link_text("add new").click()
         self.fill_contact_form(contact)
-        # submit contact creation
-        wd.find_element_by_name("submit").click()
+        wd.find_element_by_name("theform").click()
+        wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
+        self.open_contacts_page()
 
     def delete_first_contact(self):
         wd = self.app.wd
-        self.app.open_home_page()
+        self.open_contacts_page()
         # select first contact
         wd.find_element_by_name("selected[]").click()
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to_alert().accept()
+        self.open_contacts_page()
 
     def modify_first_contact(self, contact):
         wd = self.app.wd
-        self.app.open_home_page()
+        self.open_contacts_page()
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         # change contact data
         self.fill_contact_form(contact)
         # submit changing contact
         wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
-        self.return_home_page()
-
-    def return_home_page(self):
-        wd = self.app.wd
-        # return to home page
-        wd.find_element_by_link_text("home page").click()
+        self.open_contacts_page()
 
     def count(self):
         wd = self.app.wd
-        self.app.open_home_page()
+        self.open_contacts_page()
         return len(wd.find_elements_by_name("selected[]"))
