@@ -24,6 +24,7 @@
 | [Задание №8](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.7) | Реализована проверка валидности фикстуры и проверка состояния сессии |
 | [Задание №9](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.8) | Реализовано выполнение предусловий в тестах для удаления и модификации для групп и контактов |
 | [Задание №10](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.9) | Оптимизированы переходы между страницами |
+| [Задание №11](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.10) | Реализована проверка в виде сравнения списков |
 
 [back to top](#table-of-contents)
 
