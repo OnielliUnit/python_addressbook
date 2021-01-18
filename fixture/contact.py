@@ -1,3 +1,6 @@
+from model.contacts import Contact
+
+
 class contactHelper:
 
     def __init__(self, app):
@@ -19,6 +22,8 @@ class contactHelper:
     def fill_contact_form(self, contact):
         wd = self.app.wd
         self.change_field_value("firstname", contact.firstName)
+        self.change_field_value("lastname", contact.lastName)
+
 
     def create(self, contact):
         wd = self.app.wd
@@ -37,6 +42,7 @@ class contactHelper:
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to_alert().accept()
+        wd.find_element_by_css_selector("div.msgbox")
         self.open_contacts_page()
 
     def modify_first_contact(self, contact):
@@ -53,3 +59,14 @@ class contactHelper:
         wd = self.app.wd
         self.open_contacts_page()
         return len(wd.find_elements_by_name("selected[]"))
+
+    def get_contact_list(self):
+        wd = self.app.wd
+        self.open_contacts_page()
+        contacts = []
+        for element in wd.find_elements_by_name("entry"):
+            id = element.find_element_by_name("selected[]").get_attribute("id")
+            lastName = element.find_element_by_xpath("./td[2]").text
+            firstName = element.find_element_by_xpath("./td[3]").text
+            contacts.append(Contact(id=id, firstName=firstName, lastName=lastName))
+        return contacts
