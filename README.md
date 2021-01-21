@@ -26,6 +26,7 @@
 | [Задание №10](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.9) | Оптимизированы переходы между страницами |
 | [Задание №11](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.10) | Реализована проверка в виде сравнения списков |
 | [Задание №12](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.11) | Реализовано кеширование при загрузке списков групп и контактов |
+| [Задание №13](https://github.com/OnielliUnit/python_addressbook/releases/tag/v1.0.12) | Доработаны тесты, чтобы в них удалялся или модифицировался случайно выбранный элемент |
 
 [back to top](#table-of-contents)
 
