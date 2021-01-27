@@ -14,6 +14,8 @@ class Contact:
                  fax=None,
                  all_phones_from_home_page=None,
                  mail=None,
+                 mail2=None,
+                 mail3=None,
                  bday=None,
                  bmounth=None,
                  byear=None,
@@ -28,6 +30,8 @@ class Contact:
         self.fax = fax
         self.work = work
         self.mail = mail
+        self.mail2 = mail2
+        self.mail3 = mail3
         self.bday = bday
         self.bmounth = bmounth
         self.byear = byear

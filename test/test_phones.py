@@ -22,14 +22,17 @@ def test_other_on_home_page(app):
     assert contact_from_home_page.mail == merge_mail_like_on_home_page(contact_from_edit_page)
 
 
-
 def clear(s):
     return re.sub("[() -]", "", s)
 
 
 def merge_phones_like_on_home_page(contact):
-    return "\n".join(filter(lambda x: x != "", map(lambda x: clear(x), filter(lambda x: x is not None, [contact.homephone, contact.mobile, contact.work, contact.fax]))))
+    return "\n".join(filter(lambda x: x != "", map(lambda x: clear(x), filter(lambda x: x is not None,
+                                                                              [contact.homephone, contact.mobile,
+                                                                               contact.work, contact.fax]))))
 
 
 def merge_mail_like_on_home_page(contact):
-    return "\n".join(filter(lambda x: x != "", map(lambda x: clear(x), filter(lambda x: x is not None, [contact.mail]))))
+    return "\n".join(filter(lambda x: x != "", map(lambda x: clear(x), filter(lambda x: x is not None,
+                                                                              [contact.mail, contact.mail2,
+                                                                               contact.mail3]))))
