@@ -93,9 +93,10 @@ class contactHelper:
                 mail = cells[4].text
                 id = cells[0].find_element_by_name("selected[]").get_attribute("value")
                 all_phones = cells[5].text
-                self.contact_cache.append(Contact(lastname=lastname, firstname=firstname, address=address, mail=mail, id=id, all_phones_from_home_page=all_phones))
+                self.contact_cache.append(
+                    Contact(lastname=lastname, firstname=firstname, address=address, mail=mail, id=id,
+                            all_phones_from_home_page=all_phones))
         return list(self.contact_cache)
-
 
     def open_contact_to_edit_by_index(self, index):
         wd = self.app.wd
@@ -125,9 +126,9 @@ class contactHelper:
         workphone = wd.find_element_by_name("work").get_attribute("value")
         mobilephone = wd.find_element_by_name("mobile").get_attribute("value")
         secondaryphone = wd.find_element_by_name("phone2").get_attribute("value")
-        return Contact(firstname=firstname, lastname=lastname, address=address, mail=mail, homephone=homephone, work=workphone,
+        return Contact(firstname=firstname, lastname=lastname, address=address, mail=mail, homephone=homephone,
+                       work=workphone,
                        mobile=mobilephone, fax=secondaryphone, mail2=mail2, mail3=mail3)
-
 
     def get_contact_from_view_page(self, index):
         wd = self.app.wd
@@ -139,3 +140,17 @@ class contactHelper:
         secondaryphone = re.search("P: (.*)", text).group(1)
         return Contact(homephone=homephone, work=workphone,
                        mobile=mobilephone, fax=secondaryphone)
+
+    def select_contact_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='%s']" % id).click()
+
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        self.open_contacts_page()
+        self.select_contact_by_id(id)
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        wd.switch_to_alert().accept()
+        wd.find_elements_by_css_selector("div.msgbox")
+        self.open_contacts_page()
+        self.contact_cache = None
