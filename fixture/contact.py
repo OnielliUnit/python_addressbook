@@ -1,4 +1,5 @@
 from model.contacts import Contact
+from selenium.webdriver.support.select import Select
 import re
 
 
@@ -153,4 +154,22 @@ class contactHelper:
         wd.switch_to_alert().accept()
         wd.find_elements_by_css_selector("div.msgbox")
         self.open_contacts_page()
+        self.contact_cache = None
+
+    def add_contact_in_group(self, id_contact, id_group):
+        wd = self.app.wd
+        self.open_contacts_page()
+        wd.find_element_by_css_selector("input[value='%s']" % id_contact).click()
+        wd.find_element_by_name("to_group").click()
+        Select(wd.find_element_by_xpath("//select[@name='to_group']")).select_by_value(id_group)
+        wd.find_element_by_name("add").click()
+        self.contact_cache = None
+
+    def del_contact_in_group(self, id_contact, id_group):
+        wd = self.app.wd
+        self.open_contacts_page()
+        wd.find_element_by_name("group").click()
+        Select(wd.find_element_by_xpath("//select[@name='group']")).select_by_value(id_group)
+        wd.find_element_by_css_selector("input[value='%s']" % id_contact).click()
+        wd.find_element_by_name("remove").click()
         self.contact_cache = None
