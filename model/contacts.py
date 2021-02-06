@@ -13,6 +13,7 @@ class Contact:
                  work=None,
                  fax=None,
                  all_phones_from_home_page=None,
+                 all_emails_from_home_page = None,
                  mail=None,
                  mail2=None,
                  mail3=None,
@@ -37,6 +38,7 @@ class Contact:
         self.byear = byear
         self.id = id
         self.all_phones_from_home_page = all_phones_from_home_page
+        self.all_emails_from_home_page = all_emails_from_home_page
 
     def __repr__(self):
         return "%s : %s : %s" % (self.id, self.firstname, self.lastname)

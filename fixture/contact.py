@@ -90,11 +90,11 @@ class contactHelper:
                 firstname = cells[2].text
                 lastname = cells[1].text
                 address = cells[3].text
-                mail = cells[4].text
+                all_mail = cells[4].text
                 id = cells[0].find_element_by_name("selected[]").get_attribute("value")
                 all_phones = cells[5].text
                 self.contact_cache.append(
-                    Contact(lastname=lastname, firstname=firstname, address=address, mail=mail, id=id,
+                    Contact(lastname=lastname, firstname=firstname, address=address, all_emails_from_home_page=all_mail, id=id,
                             all_phones_from_home_page=all_phones))
         return list(self.contact_cache)
 
@@ -128,7 +128,7 @@ class contactHelper:
         secondaryphone = wd.find_element_by_name("phone2").get_attribute("value")
         return Contact(firstname=firstname, lastname=lastname, address=address, mail=mail, homephone=homephone,
                        work=workphone,
-                       mobile=mobilephone, fax=secondaryphone, mail2=mail2, mail3=mail3)
+                       mobile=mobilephone, fax=secondaryphone, mail2=mail2, mail3=mail3, id=id)
 
     def get_contact_from_view_page(self, index):
         wd = self.app.wd
