@@ -60,6 +60,11 @@ class contactHelper:
         self.open_contacts_page()
         self.contact_cache = None
 
+    def open_contact_to_edit_by_id(self, id):
+        wd = self.app.wd
+        self.open_contacts_page()
+        wd.find_element_by_xpath("//a[contains(@href, 'edit.php?id="+str(id)+"')]").click()
+
     def modify_first_contact(self):
         self.modify_contact_by_index(0)
 
@@ -72,6 +77,14 @@ class contactHelper:
         # submit changing contact
         wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
         self.open_contacts_page()
+        self.contact_cache = None
+
+    def modify_contact_by_id(self, id, contact):
+        wd = self.app.wd
+        self.open_contact_to_edit_by_id(id)
+        self.fill_contact_form(contact)
+        # submit edit contact
+        wd.find_element_by_name("update").click()
         self.contact_cache = None
 
     def count(self):

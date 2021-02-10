@@ -12,6 +12,6 @@ def test_delete_contact():
     pass
 
 
-@scenario('contacts.feature', 'Modify a contact')
-def test_modify_contact():
+@scenario('contacts.feature', 'Edit a contact')
+def test_edit_contact():
     pass
