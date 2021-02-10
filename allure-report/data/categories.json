@@ -1,0 +1,64 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert [('244', '', ... '', ''), ...] == [('244', '', ... '', ''), ...]\n  At index 3 diff: ('247', 'firstname M9U', 'lastnamet Lb:9 K!fs:r', 'homephone\\nmobileGW\\nworkgy%5][\\nfaxA', 'mailK%nGyja)I{B)=', 'address7$(l5nx') != ('247', 'firstname M9U', 'lastnamet Lb:9 K!fs:r', 'homephone\\nmobileGW\\nworkgy%5][\\nfaxA', 'mailK%nGyjaI{B=', 'address7$(l5nx')\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_contact_on_home_page_and_db",
+        "uid" : "7ea171a84ab6f6ca",
+        "parentUid" : "ede91e7e48c86bdafbae5b2b275fc427",
+        "status" : "failed",
+        "time" : {
+          "start" : 1612969859182,
+          "stop" : 1612969859186,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ede91e7e48c86bdafbae5b2b275fc427"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'group'",
+      "children" : [ {
+        "name" : "test_phones_on_contact_view_page",
+        "uid" : "4d007c29fd1d8929",
+        "parentUid" : "4275126efd978a824e4c8f2963e9923f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1612969859525,
+          "stop" : 1612969859919,
+          "duration" : 394
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4275126efd978a824e4c8f2963e9923f"
+    }, {
+      "name" : "NameError: name 'edit_contact' is not defined",
+      "children" : [ {
+        "name" : "test_del_contact_in_group",
+        "uid" : "80d9bfed623beed9",
+        "parentUid" : "c5f4862a9fbd9ebffff9a6f3bfa20596",
+        "status" : "broken",
+        "time" : {
+          "start" : 1612969862402,
+          "stop" : 1612969862404,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c5f4862a9fbd9ebffff9a6f3bfa20596"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

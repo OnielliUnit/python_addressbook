@@ -1,0 +1,191 @@
+[ {
+  "uid" : "7ea171a84ab6f6ca",
+  "name" : "test_contact_on_home_page_and_db",
+  "time" : {
+    "start" : 1612969859182,
+    "stop" : 1612969859186,
+    "duration" : 4
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "316460348f637c61",
+  "name" : "test_add_group[None:name^L_e;headerR;footer9ZQC7u(]",
+  "time" : {
+    "start" : 1612969855338,
+    "stop" : 1612969856493,
+    "duration" : 1155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80d9bfed623beed9",
+  "name" : "test_del_contact_in_group",
+  "time" : {
+    "start" : 1612969862402,
+    "stop" : 1612969862404,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c978db5ca52dad9b",
+  "name" : "test_add_contact[None : firstname M9U : lastnamet Lb:9 K!fs:r]",
+  "time" : {
+    "start" : 1612969842270,
+    "stop" : 1612969846478,
+    "duration" : 4208
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87913d25664e7bc4",
+  "name" : "test_delete_some_group",
+  "time" : {
+    "start" : 1612969862583,
+    "stop" : 1612969863166,
+    "duration" : 583
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da93bbb4ad8c7312",
+  "name" : "test_contact_on_home_page_and_edit",
+  "time" : {
+    "start" : 1612969857770,
+    "stop" : 1612969859136,
+    "duration" : 1366
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b06a87e5cac1ff96",
+  "name" : "test_add_contact[None :  : ]",
+  "time" : {
+    "start" : 1612969828992,
+    "stop" : 1612969833129,
+    "duration" : 4137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a13aee5af19824d5",
+  "name" : "test_modify_group_name",
+  "time" : {
+    "start" : 1612969865488,
+    "stop" : 1612969866461,
+    "duration" : 973
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "986db9387c9fb495",
+  "name" : "test_add_group[None:name;header-;footerS]|L2x&]",
+  "time" : {
+    "start" : 1612969852758,
+    "stop" : 1612969853915,
+    "duration" : 1157
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b117323c91a05176",
+  "name" : "test_add_contact[None : firstname : lastname#ir&c .6:n?]",
+  "time" : {
+    "start" : 1612969837532,
+    "stop" : 1612969842086,
+    "duration" : 4554
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ce8ea654a8fdbe",
+  "name" : "test_add_contact_in_group",
+  "time" : {
+    "start" : 1612969846674,
+    "stop" : 1612969848211,
+    "duration" : 1537
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c52826847c6c5ac7",
+  "name" : "test_add_group[None:nameC;headerPbL:-;footer}]",
+  "time" : {
+    "start" : 1612969854052,
+    "stop" : 1612969855249,
+    "duration" : 1197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b333081bb621696",
+  "name" : "test_add_group[None:nameTPO;header];R-e0i!Ug1=JkQ;footer~/HLL]",
+  "time" : {
+    "start" : 1612969856575,
+    "stop" : 1612969857705,
+    "duration" : 1130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "477e1dd6864db315",
+  "name" : "test_group_list",
+  "time" : {
+    "start" : 1612969859978,
+    "stop" : 1612969860603,
+    "duration" : 625
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d007c29fd1d8929",
+  "name" : "test_phones_on_contact_view_page",
+  "time" : {
+    "start" : 1612969859525,
+    "stop" : 1612969859919,
+    "duration" : 394
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "336da31a7638114b",
+  "name" : "test_delete_some_contact",
+  "time" : {
+    "start" : 1612969860684,
+    "stop" : 1612969862247,
+    "duration" : 1563
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94b3cef77f0d77d",
+  "name" : "test_add_contact[None : firstnameMaPf5;Up : lastname+YFN8>|tS]",
+  "time" : {
+    "start" : 1612969833285,
+    "stop" : 1612969837162,
+    "duration" : 3877
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d21369bfcc81b17",
+  "name" : "test_add_group[None:;;]",
+  "time" : {
+    "start" : 1612969848290,
+    "stop" : 1612969852645,
+    "duration" : 4355
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "693632de63db6b30",
+  "name" : "test_modify_contact_name",
+  "time" : {
+    "start" : 1612969863260,
+    "stop" : 1612969865287,
+    "duration" : 2027
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

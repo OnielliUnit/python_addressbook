@@ -1,0 +1,202 @@
+{
+  "uid" : "5473c1618b2ce20f",
+  "name" : "test_add_contact_in_group",
+  "fullName" : "test.test_add_contact_in_group#test_add_contact_in_group",
+  "historyId" : "573a25813011d82427453b445fb1edab",
+  "time" : {
+    "start" : 1612969732988,
+    "stop" : 1612969736551,
+    "duration" : 3563
+  },
+  "status" : "broken",
+  "statusMessage" : "IndexError: Cannot choose from an empty sequence",
+  "statusTrace" : "app = <fixture.application.Application object at 0x0000024E53ED1C10>, db = <fixture.db.DbFixture object at 0x0000024E53ED1CA0>, check_ui = False\n\n    def test_add_contact_in_group(app, db, check_ui):\n        with allure.step('Given a non-empty contact list'):\n            if len(db.get_group_list()) == 0:\n                app.contact.create(Contact(firstname=\"test\",\n                                           middlename=\"test\",\n                                           lastname=\"test\",\n                                           nickname=\"test\",\n                                           address=\"test\",\n                                           homephone=\"777333\",\n                                           mobile=\"777333\",\n                                           work=\"777333\",\n                                           fax=\"777333\",\n                                           mail=\"test@test.ru\",\n                                           mail2=\"test@test.ru\",\n                                           mail3=\"test@test.ru\",\n                                           bday=\"11\",\n                                           byear=\"1999\",\n                                           bmounth=\"January\"))\n        with allure.step('Given a non-empty group list'):\n            if len(db.get_contacts_not_in_group()) == 0:\n                app.group.create(Group(name=\"test\", header=\"test\", footer=\"test\"))\n        old_contacts = db.get_contacts_not_in_group()\n        with allure.step('Given a random contact from the list'):\n            c = random.choice(old_contacts)\n            gs = db.get_group_list()\n>           g = random.choice(gs)\n\ntest\\test_add_contact_in_group.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <random.Random object at 0x0000024E52A46C50>, seq = []\n\n    def choice(self, seq):\n        \"\"\"Choose a random element from a non-empty sequence.\"\"\"\n        try:\n            i = self._randbelow(len(seq))\n        except ValueError:\n>           raise IndexError('Cannot choose from an empty sequence') from None\nE           IndexError: Cannot choose from an empty sequence\n\nC:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.8_3.8.2032.0_x64__qbz5n2kfra8p0\\lib\\random.py:290: IndexError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1612969732987,
+      "stop" : 1612969732987,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1612969732892,
+      "stop" : 1612969732987,
+      "duration" : 95
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1612969702806,
+      "stop" : 1612969702806,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "db",
+    "time" : {
+      "start" : 1612969702792,
+      "stop" : 1612969702806,
+      "duration" : 14
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "IndexError: Cannot choose from an empty sequence",
+    "statusTrace" : "app = <fixture.application.Application object at 0x0000024E53ED1C10>, db = <fixture.db.DbFixture object at 0x0000024E53ED1CA0>, check_ui = False\n\n    def test_add_contact_in_group(app, db, check_ui):\n        with allure.step('Given a non-empty contact list'):\n            if len(db.get_group_list()) == 0:\n                app.contact.create(Contact(firstname=\"test\",\n                                           middlename=\"test\",\n                                           lastname=\"test\",\n                                           nickname=\"test\",\n                                           address=\"test\",\n                                           homephone=\"777333\",\n                                           mobile=\"777333\",\n                                           work=\"777333\",\n                                           fax=\"777333\",\n                                           mail=\"test@test.ru\",\n                                           mail2=\"test@test.ru\",\n                                           mail3=\"test@test.ru\",\n                                           bday=\"11\",\n                                           byear=\"1999\",\n                                           bmounth=\"January\"))\n        with allure.step('Given a non-empty group list'):\n            if len(db.get_contacts_not_in_group()) == 0:\n                app.group.create(Group(name=\"test\", header=\"test\", footer=\"test\"))\n        old_contacts = db.get_contacts_not_in_group()\n        with allure.step('Given a random contact from the list'):\n            c = random.choice(old_contacts)\n            gs = db.get_group_list()\n>           g = random.choice(gs)\n\ntest\\test_add_contact_in_group.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <random.Random object at 0x0000024E52A46C50>, seq = []\n\n    def choice(self, seq):\n        \"\"\"Choose a random element from a non-empty sequence.\"\"\"\n        try:\n            i = self._randbelow(len(seq))\n        except ValueError:\n>           raise IndexError('Cannot choose from an empty sequence') from None\nE           IndexError: Cannot choose from an empty sequence\n\nC:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.8_3.8.2032.0_x64__qbz5n2kfra8p0\\lib\\random.py:290: IndexError",
+    "steps" : [ {
+      "name" : "Given a non-empty contact list",
+      "time" : {
+        "start" : 1612969732988,
+        "stop" : 1612969736545,
+        "duration" : 3557
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a non-empty group list",
+      "time" : {
+        "start" : 1612969736545,
+        "stop" : 1612969736547,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a random contact from the list",
+      "time" : {
+        "start" : 1612969736548,
+        "stop" : 1612969736549,
+        "duration" : 1
+      },
+      "status" : "broken",
+      "statusMessage" : "IndexError: Cannot choose from an empty sequence\n",
+      "statusTrace" : "  File \"C:\\Users\\proun\\Desktop\\Python\\test\\test_add_contact_in_group.py\", line 32, in test_add_contact_in_group\n    g = random.choice(gs)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.8_3.8.2032.0_x64__qbz5n2kfra8p0\\lib\\random.py\", line 290, in choice\n    raise IndexError('Cannot choose from an empty sequence') from None\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1612969751943,
+      "stop" : 1612969753476,
+      "duration" : 1533
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1612969753478,
+      "stop" : 1612969753479,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_contact_in_group"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-JJNDNFE"
+  }, {
+    "name" : "thread",
+    "value" : "89284-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_contact_in_group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5473c1618b2ce20f.json",
+  "parameterValues" : [ ]
+}

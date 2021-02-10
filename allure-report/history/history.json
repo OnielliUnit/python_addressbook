@@ -1,0 +1,366 @@
+{
+  "63ddd405a7c16b62c15ec6832083d339" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3d21369bfcc81b17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969848290,
+        "stop" : 1612969852645,
+        "duration" : 4355
+      }
+    } ]
+  },
+  "726053ec1c5e3cafd851bb79cbfae981" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "986db9387c9fb495",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969852758,
+        "stop" : 1612969853915,
+        "duration" : 1157
+      }
+    } ]
+  },
+  "973ce581fa53232d7b7ef09581fb8d6b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "80d9bfed623beed9",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'edit_contact' is not defined",
+      "time" : {
+        "start" : 1612969862402,
+        "stop" : 1612969862404,
+        "duration" : 2
+      }
+    } ]
+  },
+  "573a25813011d82427453b445fb1edab" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5ce8ea654a8fdbe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969846674,
+        "stop" : 1612969848211,
+        "duration" : 1537
+      }
+    } ]
+  },
+  "99e5a0e109baef4301f97f8c2c73b526" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a13aee5af19824d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969865488,
+        "stop" : 1612969866461,
+        "duration" : 973
+      }
+    } ]
+  },
+  "f4f569d06e801e1682377a866bb7b03e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "87913d25664e7bc4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969862583,
+        "stop" : 1612969863166,
+        "duration" : 583
+      }
+    } ]
+  },
+  "96171ed5e2342c978f8f2d988b1eef3a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7ea171a84ab6f6ca",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert [('244', '', ... '', ''), ...] == [('244', '', ... '', ''), ...]\n  At index 3 diff: ('247', 'firstname M9U', 'lastnamet Lb:9 K!fs:r', 'homephone\\nmobileGW\\nworkgy%5][\\nfaxA', 'mailK%nGyja)I{B)=', 'address7$(l5nx') != ('247', 'firstname M9U', 'lastnamet Lb:9 K!fs:r', 'homephone\\nmobileGW\\nworkgy%5][\\nfaxA', 'mailK%nGyjaI{B=', 'address7$(l5nx')\n  Use -v to get the full diff",
+      "time" : {
+        "start" : 1612969859182,
+        "stop" : 1612969859186,
+        "duration" : 4
+      }
+    } ]
+  },
+  "e6fc8f7dbdbad5b9a7787d1cb03f03a8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3b333081bb621696",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969856575,
+        "stop" : 1612969857705,
+        "duration" : 1130
+      }
+    } ]
+  },
+  "8584e93b22c5617de5a6376d92a0330c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "da93bbb4ad8c7312",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969857770,
+        "stop" : 1612969859136,
+        "duration" : 1366
+      }
+    } ]
+  },
+  "64e10e3f612a728c10ee0c4278f6c494" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "316460348f637c61",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969855338,
+        "stop" : 1612969856493,
+        "duration" : 1155
+      }
+    } ]
+  },
+  "3c5e58ea8e211f5b3821af271bd7bed3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4d007c29fd1d8929",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'group'",
+      "time" : {
+        "start" : 1612969859525,
+        "stop" : 1612969859919,
+        "duration" : 394
+      }
+    } ]
+  },
+  "f17f29013de8c74eab7a07b09922dc90" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "477e1dd6864db315",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969859978,
+        "stop" : 1612969860603,
+        "duration" : 625
+      }
+    } ]
+  },
+  "e0a3a49ade1b55d7ab3688ec1b578f96" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c52826847c6c5ac7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969854052,
+        "stop" : 1612969855249,
+        "duration" : 1197
+      }
+    } ]
+  },
+  "f7c9905ebcdb25bfc58bbd46dc1e35fc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b117323c91a05176",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969837532,
+        "stop" : 1612969842086,
+        "duration" : 4554
+      }
+    } ]
+  },
+  "c68ada0b0ff2a2f8683dbd452b7f6a88" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b06a87e5cac1ff96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969828992,
+        "stop" : 1612969833129,
+        "duration" : 4137
+      }
+    } ]
+  },
+  "a84e4a1c2d315ae1449bd9e60f6d7061" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "693632de63db6b30",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969863260,
+        "stop" : 1612969865287,
+        "duration" : 2027
+      }
+    } ]
+  },
+  "c07b067a7ae5b77ba53564a2f9dd5d72" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c978db5ca52dad9b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969842270,
+        "stop" : 1612969846478,
+        "duration" : 4208
+      }
+    } ]
+  },
+  "2a4ab8925042ed42670ac53919df1e57" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "94b3cef77f0d77d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969833285,
+        "stop" : 1612969837162,
+        "duration" : 3877
+      }
+    } ]
+  },
+  "8ecdfc6bebb59bf305e56cbad2e7b30c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "336da31a7638114b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612969860684,
+        "stop" : 1612969862247,
+        "duration" : 1563
+      }
+    } ]
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "uid" : "80d9bfed623beed9",
+  "name" : "test_del_contact_in_group",
+  "fullName" : "test.test_del_contact_in_group#test_del_contact_in_group",
+  "historyId" : "973ce581fa53232d7b7ef09581fb8d6b",
+  "time" : {
+    "start" : 1612969862402,
+    "stop" : 1612969862404,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'edit_contact' is not defined",
+  "statusTrace" : "app = <fixture.application.Application object at 0x0000026592B41E50>, db = <fixture.db.DbFixture object at 0x0000026592B41C40>, check_ui = False\n\n    def test_del_contact_in_group(app, db, check_ui):\n        with allure.step('Given a non-empty contact list'):\n            if len(db.get_contact_list()) == 0:\n                app.contact.create(Contact(firstname=\"test\",\n                                           middlename=\"test\",\n                                           lastname=\"test\",\n                                           nickname=\"test\",\n                                           address=\"test\",\n                                           homephone=\"777333\",\n                                           mobile=\"777333\",\n                                           work=\"777333\",\n                                           fax=\"777333\",\n                                           mail=\"test@test.ru\",\n                                           mail2=\"test@test.ru\",\n                                           mail3=\"test@test.ru\",\n                                           bday=\"11\",\n                                           byear=\"1999\",\n                                           bmounth=\"January\"))\n        with allure.step('Given a non-empty group list'):\n            if len(db.get_group_list()) == 0:\n                app.group.create(Group(name='Test'))\n>       with allure.step('When I delete contact %s in group %s from the list' % (edit_contact, del_group_from_contact)):\nE       NameError: name 'edit_contact' is not defined\n\ntest\\test_del_contact_in_group.py:28: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1612969862401,
+      "stop" : 1612969862401,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1612969815372,
+      "stop" : 1612969815372,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "db",
+    "time" : {
+      "start" : 1612969815361,
+      "stop" : 1612969815371,
+      "duration" : 10
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1612969862261,
+      "stop" : 1612969862401,
+      "duration" : 140
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'edit_contact' is not defined",
+    "statusTrace" : "app = <fixture.application.Application object at 0x0000026592B41E50>, db = <fixture.db.DbFixture object at 0x0000026592B41C40>, check_ui = False\n\n    def test_del_contact_in_group(app, db, check_ui):\n        with allure.step('Given a non-empty contact list'):\n            if len(db.get_contact_list()) == 0:\n                app.contact.create(Contact(firstname=\"test\",\n                                           middlename=\"test\",\n                                           lastname=\"test\",\n                                           nickname=\"test\",\n                                           address=\"test\",\n                                           homephone=\"777333\",\n                                           mobile=\"777333\",\n                                           work=\"777333\",\n                                           fax=\"777333\",\n                                           mail=\"test@test.ru\",\n                                           mail2=\"test@test.ru\",\n                                           mail3=\"test@test.ru\",\n                                           bday=\"11\",\n                                           byear=\"1999\",\n                                           bmounth=\"January\"))\n        with allure.step('Given a non-empty group list'):\n            if len(db.get_group_list()) == 0:\n                app.group.create(Group(name='Test'))\n>       with allure.step('When I delete contact %s in group %s from the list' % (edit_contact, del_group_from_contact)):\nE       NameError: name 'edit_contact' is not defined\n\ntest\\test_del_contact_in_group.py:28: NameError",
+    "steps" : [ {
+      "name" : "Given a non-empty contact list",
+      "time" : {
+        "start" : 1612969862402,
+        "stop" : 1612969862403,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given a non-empty group list",
+      "time" : {
+        "start" : 1612969862403,
+        "stop" : 1612969862404,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1612969866465,
+      "stop" : 1612969867439,
+      "duration" : 974
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1612969867441,
+      "stop" : 1612969867441,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_del_contact_in_group"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-JJNDNFE"
+  }, {
+    "name" : "thread",
+    "value" : "22452-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_del_contact_in_group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "12853a6cccb54555",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'edit_contact' is not defined",
+      "time" : {
+        "start" : 1612969747614,
+        "stop" : 1612969747616,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "80d9bfed623beed9.json",
+  "parameterValues" : [ ]
+}
